@@ -1,0 +1,263 @@
+# ggsearch36 -L -T 8 -n -r +5/-4 -f -14 -g -4 -E "5 -1.0" -F 0.0 -b 10 -d 10 -m "F9 globalout.m9" -z 1 input.txt minidbglobal.fasta
+GGSEARCH performs a global/global database searches
+ version 36.3.8g Feb, 2018
+Query: input.txt
+  1>>>EB01 - 66 nt
+Library: minidbglobal.fasta
+      504 residues in     7 sequences
+
+Statistics: (shuffled [100]) Unscaled normal statistics: mu= -55.6400  var=260.4954 Ztrim: 0
+ statistics sampled from 7 (7) to 100 sequences
+Algorithm: Global/Global affine Needleman-Wunsch (SSE2, Michael Farrar 2010) (6.0 April 2007)
+Parameters: DNA matrix (5:-4), open/ext: -14/-4
+ Scan time:  0.000
+
+The best scores are:                                                n-w bits E(7)	%_id  %_sim  gnw  alen  an0  ax0  pn0  px0  an1  ax1 pn1 px1 gapq gapl  fs 
+KH527|KH780527.1 Sequence 201 from patent US 9676810.    (  72) [f]  210 43.5 2.5e-60	0.833 0.833  210   72    1   66    1   66    1   72    1   72   6   0   0
+KH523|KH780523.1 Sequence 197 from patent US 9676810.    (  72) [f]  192 41.4 1.4e-52	0.806 0.806  192   72    1   66    1   66    1   72    1   72   6   0   0
+KH528|KH780528.1 Sequence 202 from patent US 9676810.    (  72) [f]  192 41.4 1.4e-52	0.806 0.806  192   72    1   66    1   66    1   72    1   72   6   0   0
+HG549|HG983549.1 TPA: Homo sapiens tRNA-Ala-AGC-2-1 gene (  72) [f]  192 41.4 1.4e-52	0.806 0.806  192   72    1   66    1   66    1   72    1   72   6   0   0
+HG193|HG984193.1 TPA: Mus musculus tRNA-Ala-CGC-1-2 gene (  74) [f]  143 35.9 2.8e-34	0.743 0.743  143   74    1   66    1   66    1   74    1   74   8   0   0
+KH526|KH780526.1 Sequence 200 from patent US 9676810.    (  70) [f]  124 33.6 3.2e-28	0.722 0.722  124   72    1   66    1   66    1   70    1   70   6   2   0
+HG587|HG983587.1 TPA: Homo sapiens tRNA-Ala-TGC-4-1 gene (  72) [f]  -14 17.8   0.035	0.507 0.507  -14   75    1   66    1   66    1   72    1   72   9   3   0
+KH527|KH780527.1 Sequence 201 from patent US 9676810.    (  72) [r]  -42 14.6     1.4	0.466 0.466  -42   73   66    1   66    1    1   72    1   72   7   1   0
+HG193|HG984193.1 TPA: Mus musculus tRNA-Ala-CGC-1-2 gene (  74) [r]  -47 14.1       2	0.500 0.500  -47   74   66    1   66    1    1   74    1   74   8   0   0
+KH526|KH780526.1 Sequence 200 from patent US 9676810.    (  70) [r]  -48 13.9     2.3	0.500 0.500  -48   72   66    1   66    1    1   70    1   70   6   2   0
+
+>>>EB01, 66 nt vs minidbglobal.fasta library
+
+>>KH527|KH780527.1 Sequence 201 from patent US 9676810.                                           (72 nt)
+ n-w opt: 210  Z-score: 214.6  bits: 43.5 E(7): 2.5e-60
+global/global (N-W) score: 210; 83.3% identity (83.3% similar) in 72 nt overlap (1-66:1-72)
+
+                   10        20        30        40         50         60      
+EB01   GTTAGA----CTCATTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCC-GGGTTCAATCCG-GGCACCTCCA
+       :   :     :::: ::::::::::::::::::::::::::::::::: :::::::::::  ::::::::::
+KH527| GGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCCCGGGTTCAATCCCCGGCACCTCCA
+               10        20        30        40        50        60        70  
+
+>>KH523|KH780523.1 Sequence 197 from patent US 9676810.                                           (72 nt)
+ n-w opt: 192  Z-score: 203.4  bits: 41.4 E(7): 1.4e-52
+global/global (N-W) score: 192; 80.6% identity (80.6% similar) in 72 nt overlap (1-66:1-72)
+
+                   10        20        30        40         50         60      
+EB01   GTTAGA----CTCATTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCC-GGGTTCAATCCG-GGCACCTCCA
+       :   :     :::: ::::::::::::::::::::::: :::::: :: :::::::::::  ::::::::::
+KH523| GGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCTGGCACCTCCA
+               10        20        30        40        50        60        70  
+
+>>KH528|KH780528.1 Sequence 202 from patent US 9676810.                                           (72 nt)
+ n-w opt: 192  Z-score: 203.4  bits: 41.4 E(7): 1.4e-52
+global/global (N-W) score: 192; 80.6% identity (80.6% similar) in 72 nt overlap (1-66:1-72)
+
+                   10        20        30        40         50         60      
+EB01   GTTAGA----CTCATTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCC-GGGTTCAATCCG-GGCACCTCCA
+       :   :     :::: ::::::::::::::::::::::: :::::: :: :::::::::::  ::::::::::
+KH528| GGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCCGGCACCTCCA
+               10        20        30        40        50        60        70  
+
+>>HG549|HG983549.1 TPA: Homo sapiens tRNA-Ala-AGC-2-1 gene                                        (72 nt)
+ n-w opt: 192  Z-score: 203.4  bits: 41.4 E(7): 1.4e-52
+global/global (N-W) score: 192; 80.6% identity (80.6% similar) in 72 nt overlap (1-66:1-72)
+
+                   10        20        30        40         50         60      
+EB01   GTTAGA----CTCATTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCC-GGGTTCAATCCG-GGCACCTCCA
+       :   :     :::: ::::::::::::::::::::::: :::::: :: :::::::::::  ::::::::::
+HG549| GGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCCGGCACCTCCA
+               10        20        30        40        50        60        70  
+
+>>HG193|HG984193.1 TPA: Mus musculus tRNA-Ala-CGC-1-2 gene                                        (74 nt)
+ n-w opt: 143  Z-score: 173.1  bits: 35.9 E(7): 2.8e-34
+global/global (N-W) score: 143; 74.3% identity (74.3% similar) in 74 nt overlap (1-66:1-74)
+
+                   10        20          30        40         50         60      
+EB01   G----TTAGACTCATTGGTAGAGCGCGT--GCTTAGCATGTACGAGGTCC-GGGTTCAATCCG-GGCACCTCCA
+       :    :    :::: :::::::::::::  :::: ::::::: :::: :: :::::: ::::  :::: :::::
+HG193| GGGGATGTAGCTCAGTGGTAGAGCGCGTATGCTTCGCATGTATGAGGCCCCGGGTTCGATCCCCGGCATCTCCA
+               10        20        30        40        50        60        70    
+
+>>KH526|KH780526.1 Sequence 200 from patent US 9676810.                                           (70 nt)
+ n-w opt: 124  Z-score: 161.3  bits: 33.6 E(7): 3.2e-28
+global/global (N-W) score: 124; 72.2% identity (72.2% similar) in 72 nt overlap (1-66:1-70)
+
+                   10        20        30        40         50         60      
+EB01   G----TTAGACTCATTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCC-GGGTTCAATCCGG-GCACCTCCA
+       :    :    :::: :::::  :::: ::::::::::: : ::::::: :::::: ::::   ::: :::::
+KH526| GGGGATGTAGCTCAGTGGTA--GCGCATGCTTAGCATGCATGAGGTCCCGGGTTCGATCCCCAGCATCTCCA
+               10        20          30        40        50        60        70
+
+>>HG587|HG983587.1 TPA: Homo sapiens tRNA-Ala-TGC-4-1 gene                                        (72 nt)
+ n-w opt: -14  Z-score: 75.8  bits: 17.8 E(7): 0.035
+global/global (N-W) score: -14; 50.7% identity (50.7% similar) in 75 nt overlap (1-66:1-72)
+
+                        10        20        30        40        50        60      
+EB01   GTT---------AGACTCATTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCCGGGTTCAATCCGGGCACCTCCA
+        ::         : : ::: :   :::  ::  : : ::   :: : :   ::  :: :: : : :::: :::::
+HG587| ATTGCCGAATGGACAGTCAGTCC-AGAATGCCAG-TCAGTCGGTCCCAAACCCTTGT-CACTGCCGGCATCTCCA
+               10        20         30         40        50         60        70  
+
+>>KH527|KH780527.1 Sequence 201 from patent US 9676810.                                           (72 nt)
+rev-comp n-w opt: -42  Z-score: 58.5  bits: 14.6 E(7):  1.4
+global/global (N-W) score: -42; 46.6% identity (46.6% similar) in 73 nt overlap (66-1:1-72)
+
+            60             50        40        30         20         10         
+EB01-  TGGAGGTG-----CCCGGATTGAACCCGGACCTCGTACATGCTAAG-CACGCGCTCTA-CCAATGAGTCTAAC
+        :: ::::     :   : : :: : ::  : : : :  : : : : : :: : :: : ::   :   ::   
+KH527| -GGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCCCGGGTTCAATCCCCGGCACCTCCA
+                10        20        30        40        50        60        70  
+
+>>HG193|HG984193.1 TPA: Mus musculus tRNA-Ala-CGC-1-2 gene                                        (74 nt)
+rev-comp n-w opt: -47  Z-score: 55.4  bits: 14.1 E(7):    2
+global/global (N-W) score: -47; 50.0% identity (50.0% similar) in 74 nt overlap (66-1:1-74)
+
+              60          50          40        30         20         10         
+EB01-  TGG-AGGT-GCCCGGA--TTGAACCCGGA--CCTCGTACATGCTAAGCAC-GCGCTCTA-CCAATGAGTCTAAC
+        :: : :: :: : :   : :: : :: :  : ::: :  :   : :: : : : :: : ::   :  :::   
+HG193| GGGGATGTAGCTCAGTGGTAGAGCGCGTATGCTTCGCATGTATGAGGCCCCGGGTTCGATCCCCGGCATCTCCA
+               10        20        30        40        50        60        70    
+
+>>KH526|KH780526.1 Sequence 200 from patent US 9676810.                                           (70 nt)
+rev-comp n-w opt: -48  Z-score: 54.7  bits: 13.9 E(7):  2.3
+global/global (N-W) score: -48; 50.0% identity (50.0% similar) in 72 nt overlap (66-1:1-70)
+
+              60        50        40         30          20         10         
+EB01-  TGG-AGGT-GCCCGGATTGAACCCGGACCTCGTACATGC-TAAG--CACGCGCTCTA-CCAATGAGTCTAAC
+        :: : :: :: : :    : : :   : : :  ::::: : ::  : :: : :: : ::   :  :::   
+KH526| GGGGATGTAGCTCAGTGGTAGCGCATGCTTAG--CATGCATGAGGTCCCGGGTTCGATCCCCAGCATCTCCA
+               10        20        30          40        50        60        70
+
+
+  2>>>EB02 - 66 nt
+Library: minidbglobal.fasta
+      504 residues in     7 sequences
+
+Statistics: (shuffled [100]) Unscaled normal statistics: mu= -54.4900  var=332.3938 Ztrim: 0
+ statistics sampled from 7 (7) to 100 sequences
+Algorithm: Global/Global affine Needleman-Wunsch (SSE2, Michael Farrar 2010) (6.0 April 2007)
+Parameters: DNA matrix (5:-4), open/ext: -14/-4
+ Scan time:  0.010
+
+The best scores are:                                                n-w bits E(7)	%_id  %_sim  gnw  alen  an0  ax0  pn0  px0  an1  ax1 pn1 px1 gapq gapl  fs 
+KH527|KH780527.1 Sequence 201 from patent US 9676810.    (  72) [f]  111 29.8 3.9e-19	0.699 0.699  111   73    1   66    1   66    1   72    1   72   7   1   0
+KH523|KH780523.1 Sequence 197 from patent US 9676810.    (  72) [f]  102 28.9 3.2e-17	0.685 0.685  102   73    1   66    1   66    1   72    1   72   7   1   0
+KH528|KH780528.1 Sequence 202 from patent US 9676810.    (  72) [f]   93 28.0 2.1e-15	0.671 0.671   93   73    1   66    1   66    1   72    1   72   7   1   0
+HG549|HG983549.1 TPA: Homo sapiens tRNA-Ala-AGC-2-1 gene (  72) [f]   93 28.0 2.1e-15	0.671 0.671   93   73    1   66    1   66    1   72    1   72   7   1   0
+HG193|HG984193.1 TPA: Mus musculus tRNA-Ala-CGC-1-2 gene (  74) [f]   71 25.8   2e-11	0.671 0.671   71   76    1   66    1   66    1   74    1   74  10   2   0
+KH526|KH780526.1 Sequence 200 from patent US 9676810.    (  70) [f]   34 22.0 4.4e-06	0.603 0.603   34   73    1   66    1   66    1   70    1   70   7   3   0
+HG587|HG983587.1 TPA: Homo sapiens tRNA-Ala-TGC-4-1 gene (  72) [f]  -19 16.6    0.18	0.520 0.520  -19   75    1   66    1   66    1   72    1   72   9   3   0
+KH523|KH780523.1 Sequence 197 from patent US 9676810.    (  72) [r]  -33 15.2    0.83	0.458 0.458  -33   72   66    1   66    1    1   72    1   72   6   0   0
+HG549|HG983549.1 TPA: Homo sapiens tRNA-Ala-AGC-2-1 gene (  72) [r]  -42 14.3     1.7	0.444 0.444  -42   72   66    1   66    1    1   72    1   72   6   0   0
+KH527|KH780527.1 Sequence 201 from patent US 9676810.    (  72) [r]  -42 14.3     1.7	0.444 0.444  -42   72   66    1   66    1    1   72    1   72   6   0   0
+
+>>>EB02, 66 nt vs minidbglobal.fasta library
+
+>>KH527|KH780527.1 Sequence 201 from patent US 9676810.                                           (72 nt)
+ n-w opt: 111  Z-score: 140.8  bits: 29.8 E(7): 3.9e-19
+global/global (N-W) score: 111; 69.9% identity (69.9% similar) in 73 nt overlap (1-66:1-72)
+
+                    10        20        30        40         50        60       
+EB02   GT-----TAGTACGATTGGTAGAGCGCGTAATGCGAGTGTACGAGGTCC-GGGTTCAATCCATGAT-CCTCCA
+       :      :::  : : :::::::::::::  :  :  :::::::::::: :::::::::::  :   ::::::
+KH527| GGGGGTGTAGCTC-AGTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCCCGGGTTCAATCCCCGGCACCTCCA
+               10         20        30        40        50        60        70  
+
+>>KH523|KH780523.1 Sequence 197 from patent US 9676810.                                           (72 nt)
+ n-w opt: 102  Z-score: 135.8  bits: 28.9 E(7): 3.2e-17
+global/global (N-W) score: 102; 68.5% identity (68.5% similar) in 73 nt overlap (1-66:1-72)
+
+                    10        20        30        40         50        60       
+EB02   GT-----TAGTACGATTGGTAGAGCGCGTAATGCGAGTGTACGAGGTCC-GGGTTCAATCCATGAT-CCTCCA
+       :      :::  : : :::::::::::::  :  :  :: :::::: :: ::::::::::: ::   ::::::
+KH523| GGGGGTGTAGCTC-AGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCTGGCACCTCCA
+               10         20        30        40        50        60        70  
+
+>>KH528|KH780528.1 Sequence 202 from patent US 9676810.                                           (72 nt)
+ n-w opt:  93  Z-score: 130.9  bits: 28.0 E(7): 2.1e-15
+global/global (N-W) score: 93; 67.1% identity (67.1% similar) in 73 nt overlap (1-66:1-72)
+
+                    10        20        30        40         50        60       
+EB02   GT-----TAGTACGATTGGTAGAGCGCGTAATGCGAGTGTACGAGGTCC-GGGTTCAATCCATGAT-CCTCCA
+       :      :::  : : :::::::::::::  :  :  :: :::::: :: :::::::::::  :   ::::::
+KH528| GGGGGTGTAGCTC-AGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCCGGCACCTCCA
+               10         20        30        40        50        60        70  
+
+>>HG549|HG983549.1 TPA: Homo sapiens tRNA-Ala-AGC-2-1 gene                                        (72 nt)
+ n-w opt:  93  Z-score: 130.9  bits: 28.0 E(7): 2.1e-15
+global/global (N-W) score: 93; 67.1% identity (67.1% similar) in 73 nt overlap (1-66:1-72)
+
+                    10        20        30        40         50        60       
+EB02   GT-----TAGTACGATTGGTAGAGCGCGTAATGCGAGTGTACGAGGTCC-GGGTTCAATCCATGAT-CCTCCA
+       :      :::  : : :::::::::::::  :  :  :: :::::: :: :::::::::::  :   ::::::
+HG549| GGGGGTGTAGCTC-AGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCCGGCACCTCCA
+               10         20        30        40        50        60        70  
+
+>>HG193|HG984193.1 TPA: Mus musculus tRNA-Ala-CGC-1-2 gene                                        (74 nt)
+ n-w opt:  71  Z-score: 118.8  bits: 25.8 E(7): 2e-11
+global/global (N-W) score: 71; 67.1% identity (67.1% similar) in 76 nt overlap (1-66:1-74)
+
+                    10        20          30        40         50          60      
+EB02   GT-----TAGTACGATTGGTAGAGCGCGTAA--TGCGAGTGTACGAGGTCC-GGGTTCAATCCATG--ATCCTCCA
+       :      :::  : : ::::::::::::::   : ::  :::: :::: :: :::::: ::::  :  ::: ::::
+HG193| GGGGATGTAGCTC-AGTGGTAGAGCGCGTATGCTTCGCATGTATGAGGCCCCGGGTTCGATCCCCGGCATC-TCCA
+               10         20        30        40        50        60        70     
+
+>>KH526|KH780526.1 Sequence 200 from patent US 9676810.                                           (70 nt)
+ n-w opt:  34  Z-score: 98.5  bits: 22.0 E(7): 4.4e-06
+global/global (N-W) score: 34; 60.3% identity (60.3% similar) in 73 nt overlap (1-66:1-70)
+
+                    10        20        30        40         50         60      
+EB02   GT-----TAGTACGATTGGTAGAGCGCGTAATGCGAGTGTACGAGGTCC-GGGTTCAATCCAT-GATCCTCCA
+       :      :::  : : :::::  :::: :  :  :  :: : ::::::: :::::: ::::   :   :::::
+KH526| GGGGATGTAGCTC-AGTGGTA--GCGCATGCTTAGCATGCATGAGGTCCCGGGTTCGATCCCCAGCATCTCCA
+               10         20          30        40        50        60        70
+
+>>HG587|HG983587.1 TPA: Homo sapiens tRNA-Ala-TGC-4-1 gene                                        (72 nt)
+ n-w opt: -19  Z-score: 69.5  bits: 16.6 E(7): 0.18
+global/global (N-W) score: -19; 52.0% identity (52.0% similar) in 75 nt overlap (1-66:1-72)
+
+               10           20        30              40        50        60      
+EB02   GTTAGTACGATTGGT-AG--AGCGCGTAATGCGAGT------GTACGAGGTCCGGGTTCAATCCATGATCCTCCA
+        ::    ::: :::  ::  ::  :  ::::: :::      :: : :   ::  :: :: : :  :   :::::
+HG587| ATTG--CCGAATGGACAGTCAGTCCAGAATGCCAGTCAGTCGGTCCCAAACCCTTGT-CACTGCCGGCATCTCCA
+                 10        20        30        40        50         60        70  
+
+>>KH523|KH780523.1 Sequence 197 from patent US 9676810.                                           (72 nt)
+rev-comp n-w opt: -33  Z-score: 61.8  bits: 15.2 E(7): 0.83
+global/global (N-W) score: -33; 45.8% identity (45.8% similar) in 72 nt overlap (66-1:1-72)
+
+                60        50        40        30         20        10          
+EB02-  TGGAG----GATCATGGATTGAACCCGGACCTCGTACACTCGCATTAC-GCGCTCTACCAATCGTACTAAC-
+        :: :    : :::  : : :: : ::  : : : :  : ::     : : : :: : :  : : ::   : 
+KH523| GGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCTGGCACCTCCA
+               10        20        30        40        50        60        70  
+
+>>HG549|HG983549.1 TPA: Homo sapiens tRNA-Ala-AGC-2-1 gene                                        (72 nt)
+rev-comp n-w opt: -42  Z-score: 56.9  bits: 14.3 E(7):  1.7
+global/global (N-W) score: -42; 44.4% identity (44.4% similar) in 72 nt overlap (66-1:1-72)
+
+                60        50        40        30         20        10          
+EB02-  TGGAG----GATCATGGATTGAACCCGGACCTCGTACACTCGCATTAC-GCGCTCTACCAATCGTACTAAC-
+        :: :    : :::  : : :: : ::  : : : :  : ::     : : : :: : :    : ::   : 
+HG549| GGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCCGGCACCTCCA
+               10        20        30        40        50        60        70  
+
+>>KH527|KH780527.1 Sequence 201 from patent US 9676810.                                           (72 nt)
+rev-comp n-w opt: -42  Z-score: 56.9  bits: 14.3 E(7):  1.7
+global/global (N-W) score: -42; 44.4% identity (44.4% similar) in 72 nt overlap (66-1:1-72)
+
+                60        50        40        30         20        10          
+EB02-  TGGAG----GATCATGGATTGAACCCGGACCTCGTACACTCGCATTAC-GCGCTCTACCAATCGTACTAAC-
+        :: :    : :::  : : :: : ::  : : : :    ::   : : : : :: : :    : ::   : 
+KH527| GGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCCCGGGTTCAATCCCCGGCACCTCCA
+               10        20        30        40        50        60        70  
+
+
+>>>///
+
+132 residues in 2 query   sequences
+504 residues in 7 library sequences
+ Tcomplib [36.3.8g Feb, 2018] (8 proc in memory [0G])
+ start: Tue May  8 15:52:04 2018 done: Tue May  8 15:52:04 2018
+ Total Scan time:  0.010 Total Display time:  0.000
+
+Function used was GGSEARCH [36.3.8g Feb, 2018]

@@ -1,0 +1,262 @@
+# ssearch36 -T 8 -n -r +5/-4 -f -14 -g -4 -E "5.0 -1.0" -F 0.0 -b 50 -d 50 -m "F9 localout.m9" -z 1 input.txt minilocal.fasta
+SSEARCH performs a Smith-Waterman search
+ version 36.3.8g Feb, 2018
+Please cite:
+ T. F. Smith and M. S. Waterman, (1981) J. Mol. Biol. 147:195-197; 
+ W.R. Pearson (1991) Genomics 11:635-650
+
+Query: input.txt
+  1>>>EB01 - 66 nt
+Library: minilocal.fasta
+     2949 residues in     4 sequences
+
+Statistics: (shuffled [500]) MLE statistics: Lambda= 0.1878;  K=0.2472
+ statistics sampled from 4 (4) to 500 sequences
+Algorithm: Smith-Waterman (SSE2, Michael Farrar 2006) (7.2 Nov 2010)
+Parameters: DNA matrix (5:-4), open/ext: -14/-4
+ Scan time:  0.030
+
+The best scores are:                                                s-w bits E(4)	%_id  %_sim   sw  alen  an0  ax0  pn0  px0  an1  ax1 pn1 px1 gapq gapl  fs 
+HE391|HE161391.1                                         ( 674) [r]  228 63.8 1.2e-14	0.903 0.903  228   62   66    7   66    1  529  590    1  674   2   0   0
+HE540|HE318540.1                                         ( 719) [f]  228 63.8 1.2e-14	0.903 0.903  228   62    7   66    1   66  621  682    1  719   2   0   0
+AG587|AG736587.1                                         ( 764) [r]  228 63.8 1.2e-14	0.903 0.903  228   62   66    7   66    1  245  306    1  764   2   0   0
+CR570|CR163570.1                                         ( 792) [f]  228 63.8 1.2e-14	0.903 0.903  228   62    7   66    1   66  191  252    1  792   2   0   0
+AG587|AG736587.1                                         ( 764) [f]   54 16.7     1.5	0.714 0.714   54   28   41   66    1   66  533  560    1  764   2   0   0
+CR570|CR163570.1                                         ( 792) [r]   53 16.4     1.7	0.680 0.680   53   25   50   26   66    1   21   45    1  792   0   0   0
+HE540|HE318540.1                                         ( 719) [r]   49 15.3     2.8	0.750 0.750   49   28   58   34   66    1  657  684    1  719   3   0   0
+HE391|HE161391.1                                         ( 674) [f]   49 15.3     2.9	0.750 0.750   49   28   34   58    1   66  527  554    1  674   3   0   0
+
+>>>EB01, 66 nt vs minilocal.fasta library
+
+>>HE391|HE161391.1                                                                                (674 nt)
+rev-comp s-w opt: 228  Z-score: 306.9  bits: 63.8 E(4): 1.2e-14
+Smith-Waterman score: 228; 90.3% identity (90.3% similar) in 62 nt overlap (66-7:529-590)
+
+                                          60         50         40        30        20        10           
+EB01-                                TGGAGGTGCCCGG-ATTGAACCCGGA-CCTCGTACATGCTAAGCACGCGCTCTACCAATGAGTCTAAC  
+                                     :::::::::: :: :::::::::::  :::::: ::::::::::::::::::::::: ::::        
+HE391| AGGAAGGGCGGAGCAAGTGGACGTGGCGGTTGGAGGTGCCGGGGATTGAACCCGGGGCCTCGTGCATGCTAAGCACGCGCTCTACCACTGAGCTACACCC
+      500       510       520       530       540       550       560       570       580       590        
+
+HE391| CCGCGGCTGCCGAAACCTCAGAGGCAGGAAAAGGGAAAGCAAACAACCAACCCAACACACAAACAAAAAATGGTAT
+      600       610       620       630       640       650       660       670    
+
+>>HE540|HE318540.1                                                                                (719 nt)
+ s-w opt: 228  Z-score: 306.4  bits: 63.8 E(4): 1.2e-14
+Smith-Waterman score: 228; 90.3% identity (90.3% similar) in 62 nt overlap (7-66:621-682)
+
+                                       10        20        30        40         50         60              
+EB01                           GTTAGACTCATTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCC-GGGTTCAATCCG-GGCACCTCCA        
+                                     :::: ::::::::::::::::::::::: :::::: :: :::::::::::  ::::::::::        
+HE540| TCTGAGGTTTCGGCAGCCGCGGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCCGGCACCTCCAACCGCCAC
+              600       610       620       630       640       650       660       670       680       690
+
+HE540| GTCCACTTGCTCCGCCCTTCCTTGCTCTC
+              700       710         
+
+>>AG587|AG736587.1                                                                                (764 nt)
+rev-comp s-w opt: 228  Z-score: 305.9  bits: 63.8 E(4): 1.2e-14
+Smith-Waterman score: 228; 90.3% identity (90.3% similar) in 62 nt overlap (66-7:245-306)
+
+                                          60         50         40        30        20        10           
+EB01-                                TGGAGGTGCCCGG-ATTGAACCCGGA-CCTCGTACATGCTAAGCACGCGCTCTACCAATGAGTCTAAC  
+                                     :::::::::: :: :::::::::::  :::::: ::::::::::::::::::::::: ::::        
+AG587| AATGGAAAAGAATTTAAACACAAAAACAACTGGAGGTGCCGGGGATTGAACCCGGGGCCTCGTGCATGCTAAGCACGCGCTCTACCACTGAGCTACACCC
+          220       230       240       250       260       270       280       290       300       310    
+
+AG587| CCTTATCGAAACTACTCTCTCGAGAATATATTCAAGACAGAATCTGACCATTTTGCTACGTTTCAGAACAATTAGTTGTA
+          320       330       340       350       360       370       380       390    
+
+>>CR570|CR163570.1                                                                                (792 nt)
+ s-w opt: 228  Z-score: 305.6  bits: 63.8 E(4): 1.2e-14
+Smith-Waterman score: 228; 90.3% identity (90.3% similar) in 62 nt overlap (7-66:191-252)
+
+                                       10        20        30        40         50         60              
+EB01                           GTTAGACTCATTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCC-GGGTTCAATCCG-GGCACCTCCA        
+                                     :::: ::::::::::::::::::::::: :::::: :: :::::::::::  ::::::::::        
+CR570| CCCAAGAGCTTAGCTGTGTCGGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCCGGCACCTCCAGTGTTTTC
+              170       180       190       200       210       220       230       240       250       260
+
+CR570| AAGCCTCCATCTGCTCGCTTTTCTCCAACAAATATACTTACACTTTTCCTTGCTCGAAGAGAAAGTCAAACCCTTCCATA
+              270       280       290       300       310       320       330       340
+
+>>AG587|AG736587.1                                                                                (764 nt)
+ s-w opt:  54  Z-score: 51.1  bits: 16.7 E(4):  1.5
+Smith-Waterman score: 54; 71.4% identity (71.4% similar) in 28 nt overlap (41-66:533-560)
+
+               20        30        40        50          60                                                
+EB01   TTGGTAGAGCGCGTGCTTAGCATGTACGAGGTCCGGGTTCAAT--CCGGGCACCTCCA                                          
+                                     ::::::  ::: :  :::: :::: : :                                          
+AG587| TTGATGGTCCTGGGATTTTTCTGCTCGTCAGTCCGGAGTCACTTCCCGGCCACCACTAGAAGAACCAGGGATGAAATTTTCTCCTGAGTTTTGACTGTCT
+            510       520       530       540       550       560       570       580       590       600  
+
+AG587| CCTTTCTTTCTCCGCTGCTT
+            610       620  
+
+>>CR570|CR163570.1                                                                                (792 nt)
+rev-comp s-w opt:  53  Z-score: 49.3  bits: 16.4 E(4):  1.7
+Smith-Waterman score: 53; 68.0% identity (68.0% similar) in 25 nt overlap (50-26:21-45)
+
+                60        50        40        30        20        10                                       
+EB01-      TGGAGGTGCCCGGATTGAACCCGGACCTCGTACATGCTAAGCACGCGCTCTACCAATGAGTCTAAC                              
+                           :: :: ::: : :: : ::: : ::                                                       
+CR570| CTTCGAAAGCTGTTGGTTCGGACCCGGGAGCGCGCAGATGGTCAGATGCCATGGATTTGGACTTGATTTTCAAAAAAATCGGTGAAAATAATTATGGCCT
+               10        20        30        40        50        60        70        80        90       100
+
+CR570| TCGGCTTCTGTTCATACTTC
+              110       120
+
+>>HE540|HE318540.1                                                                                (719 nt)
+rev-comp s-w opt:  49  Z-score: 44.2  bits: 15.3 E(4):  2.8
+Smith-Waterman score: 49; 75.0% identity (75.0% similar) in 28 nt overlap (58-34:657-684)
+
+                                  60        50           40        30        20        10           
+EB01-                        TGGAGGTGCCCGGATTGAA--CCCGG-ACCTCGTACATGCTAAGCACGCGCTCTACCAATGAGTCTAAC  
+                                     ::::: :: ::  ::::: :::::  ::                                   
+HE540| GGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCCGGCACCTCCAACCGCCACGTCCACTTGCTCCGCCCTTCCTTGCTCTC
+        630       640       650       660       670       680       690       700       710         
+
+>>HE391|HE161391.1                                                                                (674 nt)
+ s-w opt:  49  Z-score: 44.7  bits: 15.3 E(4):  2.9
+Smith-Waterman score: 49; 75.0% identity (75.0% similar) in 28 nt overlap (34-58:527-554)
+
+            10        20        30        40           50        60                                        
+EB01   AGACTCATTGGTAGAGCGCGTGCTTAGCATGTACGAGGT-CCGGG--TTCAATCCGGGCACCTCCA                                  
+                                     ::  ::::: :::::  :: :: :::::                                          
+HE391| CAAGGAAGGGCGGAGCAAGTGGACGTGGCGGTTGGAGGTGCCGGGGATTGAACCCGGGGCCTCGTGCATGCTAAGCACGCGCTCTACCACTGAGCTACAC
+        500       510       520       530       540       550       560       570       580       590      
+
+HE391| CCCCGCGGCTGCCGAAACCT
+        600       610      
+
+
+  2>>>EB02 - 66 nt
+Library: minilocal.fasta
+     2949 residues in     4 sequences
+
+Statistics: (shuffled [500]) MLE statistics: Lambda= 0.1953;  K=0.3241
+ statistics sampled from 4 (4) to 500 sequences
+Algorithm: Smith-Waterman (SSE2, Michael Farrar 2006) (7.2 Nov 2010)
+Parameters: DNA matrix (5:-4), open/ext: -14/-4
+ Scan time:  0.030
+
+The best scores are:                                                s-w bits E(4)	%_id  %_sim   sw  alen  an0  ax0  pn0  px0  an1  ax1 pn1 px1 gapq gapl  fs 
+AG587|AG736587.1                                         ( 764) [r]  132 38.8   4e-07	0.746 0.746  132   59   66   10   66    1  245  303    1  764   2   0   0
+CR570|CR163570.1                                         ( 792) [f]  132 38.8   4e-07	0.746 0.746  132   59   10   66    1   66  194  252    1  792   2   0   0
+HE540|HE318540.1                                         ( 719) [f]  132 38.8   4e-07	0.746 0.746  132   59   10   66    1   66  624  682    1  719   2   0   0
+HE391|HE161391.1                                         ( 674) [r]  132 38.8   4e-07	0.746 0.746  132   59   66   10   66    1  529  587    1  674   2   0   0
+HE391|HE161391.1                                         ( 674) [f]   60 18.5    0.48	0.667 0.667   60   30    5   34    1   66  212  241    1  674   0   0   0
+CR570|CR163570.1                                         ( 792) [r]   43 13.7     3.6	0.786 0.786   43   14   56   43   66    1   14   27    1  792   0   0   0
+AG587|AG736587.1                                         ( 764) [f]   43 13.7     3.8	0.708 0.708   43   24    4   27    1   66  128  150    1  764   0   1   0
+HE540|HE318540.1                                         ( 719) [r]   43 13.7       4	0.786 0.786   43   14   41   28   66    1  687  700    1  719   0   0   0
+
+>>>EB02, 66 nt vs minilocal.fasta library
+
+>>AG587|AG736587.1                                                                                (764 nt)
+rev-comp s-w opt: 132  Z-score: 170.9  bits: 38.8 E(4): 4e-07
+Smith-Waterman score: 132; 74.6% identity (74.6% similar) in 59 nt overlap (66-10:245-303)
+
+                                          60         50         40        30        20        10           
+EB02-                                TGGAGGATCATGG-ATTGAACCCGGA-CCTCGTACACTCGCATTACGCGCTCTACCAATCGTACTAAC  
+                                     ::::::  :  :: :::::::::::  :::::: ::  :  :  ::::::::::::: :           
+AG587| AATGGAAAAGAATTTAAACACAAAAACAACTGGAGGTGCCGGGGATTGAACCCGGGGCCTCGTGCATGCTAAGCACGCGCTCTACCACTGAGCTACACCC
+          220       230       240       250       260       270       280       290       300       310    
+
+AG587| CCTTATCGAAACTACTCTCT
+          320       330    
+
+>>CR570|CR163570.1                                                                                (792 nt)
+ s-w opt: 132  Z-score: 170.6  bits: 38.8 E(4): 4e-07
+Smith-Waterman score: 132; 74.6% identity (74.6% similar) in 59 nt overlap (10-66:194-252)
+
+                                    10        20        30        40         50        60                  
+EB02                        GTTAGTACGATTGGTAGAGCGCGTAATGCGAGTGTACGAGGTCC-GGGTTCAATCCATGAT-CCTCCA           
+                                     : :::::::::::::  :  :  :: :::::: :: :::::::::::  :   ::::::           
+CR570| AAGAGCTTAGCTGTGTCGGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCCGGCACCTCCAGTGTTTTCAAG
+           170       180       190       200       210       220       230       240       250       260   
+
+CR570| CCTCCATCTGCTCGCTTTTC
+           270       280   
+
+>>HE540|HE318540.1                                                                                (719 nt)
+ s-w opt: 132  Z-score: 171.3  bits: 38.8 E(4): 4e-07
+Smith-Waterman score: 132; 74.6% identity (74.6% similar) in 59 nt overlap (10-66:624-682)
+
+                                    10        20        30        40         50        60                  
+EB02                        GTTAGTACGATTGGTAGAGCGCGTAATGCGAGTGTACGAGGTCC-GGGTTCAATCCATGAT-CCTCCA           
+                                     : :::::::::::::  :  :  :: :::::: :: :::::::::::  :   ::::::           
+HE540| GAGGTTTCGGCAGCCGCGGGGGTGTAGCTCAGTGGTAGAGCGCGTGCTTAGCATGCACGAGGCCCCGGGTTCAATCCCCGGCACCTCCAACCGCCACGTC
+           600       610       620       630       640       650       660       670       680       690   
+
+HE540| CACTTGCTCCGCCCTTCCTT
+           700       710   
+
+>>HE391|HE161391.1                                                                                (674 nt)
+rev-comp s-w opt: 132  Z-score: 171.8  bits: 38.8 E(4): 4e-07
+Smith-Waterman score: 132; 74.6% identity (74.6% similar) in 59 nt overlap (66-10:529-587)
+
+                                          60         50         40        30        20        10           
+EB02-                                TGGAGGATCATGG-ATTGAACCCGGA-CCTCGTACACTCGCATTACGCGCTCTACCAATCGTACTAAC  
+                                     ::::::  :  :: :::::::::::  :::::: ::  :  :  ::::::::::::: :           
+HE391| AGGAAGGGCGGAGCAAGTGGACGTGGCGGTTGGAGGTGCCGGGGATTGAACCCGGGGCCTCGTGCATGCTAAGCACGCGCTCTACCACTGAGCTACACCC
+      500       510       520       530       540       550       560       570       580       590        
+
+HE391| CCGCGGCTGCCGAAACCTCA
+      600       610        
+
+>>HE391|HE161391.1                                                                                (674 nt)
+ s-w opt:  60  Z-score: 62.2  bits: 18.5 E(4): 0.48
+Smith-Waterman score: 60; 66.7% identity (66.7% similar) in 30 nt overlap (5-34:212-241)
+
+                                         10        20        30        40        50        60              
+EB02                             GTTAGTACGATTGGTAGAGCGCGTAATGCGAGTGTACGAGGTCCGGGTTCAATCCATGATCCTCCA        
+                                     : : :::  :  ::: ::::  :: :::::                                        
+HE391| GGTGGCGGTGGCTGCCGACGCCGGTTTGGTGAAAGATGAGACGAGGGCGTGGTGAGAGTGATTTCCTGCTCTCAGAAGTCCTGGTAGTTGATTTTTGTGG
+             190       200       210       220       230       240       250       260       270       280 
+
+HE391| CGTATCGATCGGCCTTGGCC
+             290       300 
+
+>>CR570|CR163570.1                                                                                (792 nt)
+rev-comp s-w opt:  43  Z-score: 35.1  bits: 13.7 E(4):  3.6
+Smith-Waterman score: 43; 78.6% identity (78.6% similar) in 14 nt overlap (56-43:14-27)
+
+               60        50        40        30        20          
+EB02-     TGGAGGATCATGGATTGAACCCGGACCTCGTACACTCGCATTACGCGCTCTACCAAT
+                    ::: : : ::::::                                 
+CR570| CTTCGAAAGCTGTTGGTTCGGACCCGGGAGCGCGCAGATGGTCAGATGCCATGGATTTGG
+               10        20        30        40        50        60
+
+>>AG587|AG736587.1                                                                                (764 nt)
+ s-w opt:  43  Z-score: 35.3  bits: 13.7 E(4):  3.8
+Smith-Waterman score: 43; 70.8% identity (70.8% similar) in 24 nt overlap (4-27:128-150)
+
+                                          10        20        30        40        50        60             
+EB02                              GTTAGTACGATTGGTAGAGCGCGTAATGCGAGTGTACGAGGTCCGGGTTCAATCCATGATCCTCCA       
+                                     ::::  : ::: : ::: : ::::                                              
+AG587| CAGCCCCCGTGAGTCGTGTCAAGGCTGACGAGTAGAAATGGAACAGCAC-TAATATTAATGGCGAAACCTTTGTAAAATACGTTTGGTTTCTGTTTAACA
+       100       110       120       130       140        150       160       170       180       190      
+
+AG587| AGGAAAAGAAAGTAAAGCAA
+        200       210      
+
+>>HE540|HE318540.1                                                                                (719 nt)
+rev-comp s-w opt:  43  Z-score: 35.8  bits: 13.7 E(4):    4
+Smith-Waterman score: 43; 78.6% identity (78.6% similar) in 14 nt overlap (41-28:687-700)
+
+                 60        50        40        30        20        10         
+EB02-       TGGAGGATCATGGATTGAACCCGGACCTCGTACACTCGCATTACGCGCTCTACCAATCGTACTAAC
+                                     :: ::: :::: ::                           
+HE540| CCCGGGTTCAATCCCCGGCACCTCCAACCGCCACGTCCACTTGCTCCGCCCTTCCTTGCTCTC        
+        660       670       680       690       700       710                 
+
+
+>>>///
+
+132 residues in 2 query   sequences
+2949 residues in 4 library sequences
+ Tcomplib [36.3.8g Feb, 2018] (8 proc in memory [0G])
+ start: Tue May  8 16:22:21 2018 done: Tue May  8 16:22:21 2018
+ Total Scan time:  0.060 Total Display time:  0.010
+
+Function used was SSEARCH [36.3.8g Feb, 2018]
